@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.container {
+	padding: 20px;
+	background-color: #bfbfbf;
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.rows {
+	border: 2px solid white;
+}
+/* .cell__box:nth-child(2n) {
+	background-color: orange;
+	color: red;
+} */
+
+// .row__first > .cell__box:nth-child(even) {
+// 	background-color: orange;
+// 	color: red;
+// }
+
+.row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+	&__second .cell__box {
+		background-color: orange;
+	}
+	&__first .cell__box {
+		background-color: red;
+	}
+}
+
+.cell {
+	&__box {
+		width: 151px;
+		height: 151px;
+		padding: 15px;
+		border: 3px solid white;
+	}
+	&__number {
+		font-size: 48px;
+		font-weight: 700;
+		color: white;
+
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		color: orange;
+	}
+}
