@@ -9,7 +9,7 @@ body {
 
 .container {
 	padding: 20px;
-	background-color: #bfbfbf;
+	background-color: #eeeeee;
 }
 
 .link {
@@ -49,19 +49,19 @@ body {
 	}
 
 	&__seventh .cell__box {
-		background-color: #481f7e;
+		background-color: #6a1b9a;
 	}
 
 	&__seventh div:nth-child(2n) .cell__box {
-		background-color: #8042d1;
+		background-color: #9c27b0;
 	}
 
 	&__sixth .cell__box {
-		background-color: #0a3784;
+		background-color: #0d47a1;
 	}
 
 	&__sixth div:nth-child(2n + 1) .cell__box {
-		background-color: #0059b3;
+		background-color: #1565c0;
 	}
 
 	&__fifth .cell__box {
@@ -69,23 +69,23 @@ body {
 	}
 
 	&__fifth div:nth-child(2n) .cell__box {
-		background-color: #62bbff;
+		background-color: #4fc3f7;
 	}
 
 	&__fourth .cell__box {
-		background-color: #168039;
+		background-color: #2e7d32;
 	}
 
 	&__fourth div:nth-child(2n + 1) .cell__box {
-		background-color: #5fbc63;
+		background-color: #66bb6a;
 	}
 
 	&__third .cell__box {
-		background-color: #ffd10f;
+		background-color: #ffd600;
 	}
 
 	&__third div:nth-child(2n) .cell__box {
-		background-color: #ffee58;
+		background-color: #ffeb3b;
 	}
 
 	&__second .cell__box {
@@ -102,7 +102,7 @@ body {
 	}
 
 	&__first div:nth-child(2n) .cell__box {
-		background-color: #e84d49;
+		background-color: #ef5350;
 	}
 }
 
@@ -137,7 +137,7 @@ body {
 	}
 
 	&__title {
-		color: #1c1d21;
+		color: #212121;
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: 15px;
