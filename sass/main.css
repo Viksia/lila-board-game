@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 .container {
@@ -17,10 +18,6 @@ body {
   color: inherit;
 }
 
-/* .cell__box:nth-child(2n) {
-	background-color: orange;
-	color: red;
-} */
 .row {
   display: flex;
   flex-wrap: nowrap;
@@ -112,61 +109,85 @@ body {
   line-height: 21px;
   text-align: center;
 }
+.cell__link img {
+  width: 350px;
+  border-color: none;
+  border-radius: 25px;
+}
 
-.backdrop {
-  position: fixed;
+.gallery {
+  position: relative;
+  padding: 58px;
+}
+
+.gallery-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  font-size: 0;
+  margin-top: 30px;
+}
+
+.gallery-item {
+  display: block;
+  flex: 25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item-hover {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition-property: opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.is-hidden {
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 2;
 }
-.modal__container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 450px;
-  max-height: 609px;
-  padding: 40px;
-  background-color: var(--logo-color-footer);
-  border-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+
+.gallery-item:hover .gallery-item-hover {
+  opacity: 1;
 }
-@media screen and (min-width: 1200px) {
-  .modal__container {
-    max-width: 528px;
-    max-height: 581px;
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 991px) {
+  .gallery-item {
+    flex: 33.3%;
   }
 }
-.modal__button {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.9);
-  background-color: var(--logo-color-footer);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 50%;
+  }
 }
-.modal__button:hover, .modal__button:focus {
-  fill: var(--logo-color-main);
+@media (max-width: 530px) {
+  .gallery-item {
+    flex: 100%;
+  }
+}
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

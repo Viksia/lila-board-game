@@ -22,4 +22,14 @@
 <symbol id="icon-menu-close" viewBox="0 0 32 32">
 <path d="M23.734 10.304l-1.504-1.504-5.963 5.962-5.962-5.962-1.504 1.504 5.962 5.962-5.962 5.963 1.504 1.504 5.962-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.962z"></path>
 </symbol>
+<symbol id="icon-corners-move" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M19.8 12.2l10.2-10.2"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M12.2 19.8l-10.2 10.2"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M2.093 19.8v10.107h10.107"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M29.907 12.2v-10.107h-10.107"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M30 30l-10.2-10.2"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M2 2l10.2 10.2"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M12.2 2.093h-10.107v10.107"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M19.8 29.907h10.107v-10.107"></path>
+</symbol>
 </defs></svg>
