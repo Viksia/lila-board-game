@@ -32,4 +32,7 @@
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M12.2 2.093h-10.107v10.107"></path>
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="2.5333" d="M19.8 29.907h10.107v-10.107"></path>
 </symbol>
+<symbol id="icon-cross" viewBox="0 0 32 32">
+<path d="M26.667 9.081l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
+</symbol>
 </defs></svg>
