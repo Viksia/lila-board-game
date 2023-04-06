@@ -928,8 +928,37 @@
 					</svg></button>
 			</div>
 		</div>
+		<div class="dices">
+			<div class="dices__wrapper">
+				<div class="dices__column">
+					<div id="dice-side" class="dice">0</div>
+				</div>
+
+				<!-- <h2 id="status"></h2> -->
+				<div class="dices__column">
+					<button type="button" class="dice-roll">roll dice</button>
+
+				</div>
+			</div>
+		</div>
+		<!-- 2 кубика -->
+		<!-- <div class="dices">
+			<div class="dices__wrapper">
+				<div class="dices__column">
+					<div id="dice-side-1" class="dice">0</div>
+					<div id="dice-side-2" class="dice">0</div>
+				</div>
+				<div class="dices__column">
+					<button type="button" class="dice-roll">roll dice</button>
+					<h2 id="status"></h2>
+				</div>
+			</div>
+		</div> -->
 	</div>
-	<script>
+	<script src="src/gallery.js"></script>
+	<script src="src/dice.js"></script>
+	<!-- <script>
+	
 		document.addEventListener('DOMContentLoaded', function () {
 			const cells = document.querySelectorAll('.cell');
 			const modalOverlay = document.getElementById('modalOverlay');
@@ -968,7 +997,7 @@
 				`./images/${index}b.jpg`
 			];
 		}
-	</script>
+	</script> -->
 
 
 </body>
