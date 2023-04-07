@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -9,7 +9,7 @@
 		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-	<link rel="stylesheet" href="script.js">
+	<!-- <link rel="stylesheet" href="script.js"> -->
 	<!-- Favicon -->
 	<link rel="icon" type="image/x-icon" href="./images/fav.ico" />
 	<link rel="stylesheet" href="./sass/main.css">
@@ -810,6 +810,18 @@
 			<!-- 1-ый ряд -->
 			<div class="row__first row">
 
+				<!-- <div class="cell__zero">
+					<div class="cell__box-zero">
+						<div class="cell__flexbox">
+							<h2 class="cell__number">0</h2>
+							<svg width=34 height=34 class="cell__geks">
+									<use href="./images/icon-geks.svg#icon-1">
+								</svg>
+						</div>
+						<h3 class="cell__title-zero">Начало игры До</h3>
+					</div>
+				</div> -->
+
 				<div class="cell" data-index="1">
 					<div class="cell__link link">
 						<div class="cell__box">
@@ -957,47 +969,7 @@
 	</div>
 	<script src="src/gallery.js"></script>
 	<script src="src/dice.js"></script>
-	<!-- <script>
-	
-		document.addEventListener('DOMContentLoaded', function () {
-			const cells = document.querySelectorAll('.cell');
-			const modalOverlay = document.getElementById('modalOverlay');
-			const gallery = document.getElementById('gallery');
-			const closeBtn = document.getElementById('closeBtn');
 
-			cells.forEach(cell => {
-				cell.addEventListener('click', showGallery);
-			});
-
-			function showGallery(event) {
-				const index = event.currentTarget.dataset.index;
-				const images = getImagesByIndex(index);
-
-				gallery.innerHTML = '';
-				for (const imgSrc of images) {
-					const img = document.createElement('img');
-					img.src = imgSrc;
-					gallery.appendChild(img);
-				}
-
-				modalOverlay.style.display = 'block';
-			}
-
-			function hideGallery() {
-				modalOverlay.style.display = 'none';
-			}
-
-			closeBtn.addEventListener('click', hideGallery);
-		});
-
-		function getImagesByIndex(index) {
-			// Замените на ваш код для получения картинок по индексу ячейки
-			return [
-				`./images/${index}a.jpg`,
-				`./images/${index}b.jpg`
-			];
-		}
-	</script> -->
 
 
 </body>

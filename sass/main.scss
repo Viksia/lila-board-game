@@ -13,10 +13,10 @@ body {
 	background-color: #eeeeee;
 }
 
-.link {
-	text-decoration: none;
-	color: inherit;
-}
+// .link {
+// 	text-decoration: none;
+// 	color: inherit;
+// }
 
 .row {
 	display: flex;
@@ -31,12 +31,12 @@ body {
 		border-right: 2px solid white;
 	}
 
-	&__eighth .cell__box {
+	&__eighth .cell__link {
 		background-color: #8fd6fb;
 		border-top: 2px solid white;
 	}
 
-	&__eighth div:nth-child(2n + 1) .cell__box {
+	&__eighth div:nth-child(2n + 1) .cell__link {
 		background-color: #add5f7;
 	}
 
@@ -44,15 +44,15 @@ body {
 		background-color: #6a1b9a;
 	}
 
-	&__seventh div:nth-child(2n) .cell__box {
+	&__seventh div:nth-child(even) .cell__box {
 		background-color: #9c27b0;
 	}
 
-	&__sixth .cell__box {
+	&__sixth .cell__link {
 		background-color: #0d47a1;
 	}
 
-	&__sixth div:nth-child(2n + 1) .cell__box {
+	&__sixth div:nth-child(2n + 1) .cell__link {
 		background-color: #1565c0;
 	}
 
@@ -60,15 +60,15 @@ body {
 		background-color: #139aff;
 	}
 
-	&__fifth div:nth-child(2n) .cell__box {
+	&__fifth div:nth-child(even) .cell__box {
 		background-color: #4fc3f7;
 	}
 
-	&__fourth .cell__box {
+	&__fourth .cell__link {
 		background-color: #2e7d32;
 	}
 
-	&__fourth div:nth-child(2n + 1) .cell__box {
+	&__fourth div:nth-child(2n + 1) .cell__link {
 		background-color: #66bb6a;
 	}
 
@@ -76,15 +76,15 @@ body {
 		background-color: #ffd600;
 	}
 
-	&__third div:nth-child(2n) .cell__box {
+	&__third div:nth-child(even) .cell__box {
 		background-color: #ffeb3b;
 	}
 
-	&__second .cell__box {
+	&__second .cell__link {
 		background-color: #f2600c;
 	}
 
-	&__second div:nth-child(2n + 1) .cell__box {
+	&__second div:nth-child(odd) .cell__link {
 		background-color: #ff8533;
 	}
 
@@ -93,7 +93,7 @@ body {
 		border-bottom: 2px solid white;
 	}
 
-	&__first div:nth-child(2n) .cell__box {
+	&__first div:nth-child(even) .cell__box {
 		background-color: #ef5350;
 	}
 }
@@ -140,6 +140,22 @@ body {
 		border-color: none;
 		border-radius: 25px;
 	}
+
+	// Zero block
+
+	// &__zero {
+	// 	width: 30px;
+	// 	height: 170px;
+	// 	padding: 10px;
+	// 	border: 1px solid white;
+	// }
+
+	// &__box-zero {
+	// }
+
+	// &__title-zero {
+	// 	writing-mode: vertical-lr;
+	// }
 }
 
 // Gallery new

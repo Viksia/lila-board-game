@@ -14,11 +14,6 @@ body {
   background-color: #eeeeee;
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
 .row {
   display: flex;
   flex-wrap: nowrap;
@@ -30,54 +25,54 @@ body {
 .row > div:last-child {
   border-right: 2px solid white;
 }
-.row__eighth .cell__box {
+.row__eighth .cell__link {
   background-color: #8fd6fb;
   border-top: 2px solid white;
 }
-.row__eighth div:nth-child(2n+1) .cell__box {
+.row__eighth div:nth-child(2n+1) .cell__link {
   background-color: #add5f7;
 }
 .row__seventh .cell__box {
   background-color: #6a1b9a;
 }
-.row__seventh div:nth-child(2n) .cell__box {
+.row__seventh div:nth-child(even) .cell__box {
   background-color: #9c27b0;
 }
-.row__sixth .cell__box {
+.row__sixth .cell__link {
   background-color: #0d47a1;
 }
-.row__sixth div:nth-child(2n+1) .cell__box {
+.row__sixth div:nth-child(2n+1) .cell__link {
   background-color: #1565c0;
 }
 .row__fifth .cell__box {
   background-color: #139aff;
 }
-.row__fifth div:nth-child(2n) .cell__box {
+.row__fifth div:nth-child(even) .cell__box {
   background-color: #4fc3f7;
 }
-.row__fourth .cell__box {
+.row__fourth .cell__link {
   background-color: #2e7d32;
 }
-.row__fourth div:nth-child(2n+1) .cell__box {
+.row__fourth div:nth-child(2n+1) .cell__link {
   background-color: #66bb6a;
 }
 .row__third .cell__box {
   background-color: #ffd600;
 }
-.row__third div:nth-child(2n) .cell__box {
+.row__third div:nth-child(even) .cell__box {
   background-color: #ffeb3b;
 }
-.row__second .cell__box {
+.row__second .cell__link {
   background-color: #f2600c;
 }
-.row__second div:nth-child(2n+1) .cell__box {
+.row__second div:nth-child(odd) .cell__link {
   background-color: #ff8533;
 }
 .row__first .cell__box {
   background-color: #d40d12;
   border-bottom: 2px solid white;
 }
-.row__first div:nth-child(2n) .cell__box {
+.row__first div:nth-child(even) .cell__box {
   background-color: #ef5350;
 }
 
