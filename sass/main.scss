@@ -10,6 +10,7 @@ body {
 
 .container {
 	padding: 20px;
+	padding-bottom: 100px;
 	background-color: #eeeeee;
 }
 
@@ -223,139 +224,105 @@ body {
 	}
 }
 
-/* Стили для кубика */
+/* Стили для кубика та аватарів гравців */
 
-.dices {
-	position: relative;
-}
-
-.dices__wrapper {
-	width: 285px;
-	margin: 0 auto;
+.dices-avatar {
+	// position: relative;
 	display: flex;
-	justify-content: space-between;
+	// z-index: 100;
+
+	.dices__wrapper {
+		margin-top: 20px;
+		position: absolute;
+		width: 160px;
+		margin-left: 1250px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		margin-bottom: 15px;
+	}
+
+	.dice {
+		width: 75px;
+		float: left;
+		background-color: #3f3f3f;
+		border: 3px solid white;
+		color: white;
+		font-size: 25px;
+		font-weight: 700;
+		padding: 20px;
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+			0px 2px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	.dice-roll {
+		cursor: pointer;
+		text-transform: capitalize;
+		width: 75px;
+		float: left;
+		background-color: white;
+		border: 3px solid #3f3f3f;
+		color: #3f3f3f;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 700;
+		padding: 14px;
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+			0px 2px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	.players {
+		margin-top: 30px;
+		// position: absolute;
+
+		.player {
+			border-radius: 50%;
+			width: 58px;
+			height: 58px;
+			position: absolute;
+			z-index: 200;
+			cursor: pointer;
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+				0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+		}
+
+		#avat1 {
+			left: 80px;
+		}
+		#avat2 {
+			left: 160px;
+		}
+		#avat3 {
+			left: 240px;
+		}
+		#avat4 {
+			left: 320px;
+		}
+		#avat5 {
+			left: 400px;
+		}
+		#avat6 {
+			left: 480px;
+		}
+		#avat7 {
+			left: 560px;
+		}
+		#avat8 {
+			left: 640px;
+		}
+
+		.avatar {
+			width: 58px;
+			height: 58px;
+			padding: 1px;
+			border-radius: 50%;
+			border: 3px solid #3f3f3f;
+			background-color: white;
+		}
+	}
 }
-
-.dices__column {
-	display: flex;
-	// gap: 40px;
-	align-items: center;
-}
-
-// #status {
-// 	position: absolute;
-// 	top: 5rem;
-// 	left: 50%;
-// 	transform: translateX(-50%);
-// 	min-width: 400px;
-// 	margin: 0;
-// 	text-align: center;
-// }
-
-.dice {
-	width: 110px;
-	float: left;
-	background-color: #3f3f3f;
-	border: 3px solid white;
-	color: white;
-	font-size: 48px;
-	font-weight: 700;
-	padding: 20px;
-	text-align: center;
-	margin: 5px;
-	border-radius: 5px;
-}
-
-.dice-roll {
-	cursor: pointer;
-	text-transform: capitalize;
-	// width: 120px;
-	height: 98px;
-	float: left;
-	background-color: white;
-	border: 3px solid #3f3f3f;
-	color: #3f3f3f;
-	font-size: 15px;
-	font-weight: 700;
-	padding: 20px;
-	text-align: center;
-	margin: 5px;
-	border-radius: 5px;
-}
-
-// gallery
-
-// .gallery {
-// 	position: relative;
-// 	padding: 58px;
-// }
-
-// .gallery-list {
-// 	position: relative;
-// 	display: flex;
-// 	flex-wrap: wrap;
-// 	overflow: hidden;
-// 	font-size: 0;
-// 	margin-top: 30px;
-// }
-// .gallery-item {
-// 	display: block;
-// 	flex: 25%;
-// 	overflow: hidden;
-// 	position: relative;
-// }
-// .gallery-item-hover {
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 	background-color: rgba(0, 0, 0, 0.6);
-// 	color: #ffffff;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	font-size: 16px;
-// 	opacity: 0;
-// 	transition: opacity 0.5s ease;
-// 	z-index: 2;
-// }
-// .gallery-item:hover .gallery-item-hover {
-// 	opacity: 1;
-// }
-// // .gallery-item:hover img {
-// // 	transform: scale(1.3) rotate(5deg);
-// // }
-// .gallery-item img {
-// 	max-width: 100%;
-// 	height: auto;
-// 	transition: all 0.5s ease;
-// }
-// @media (max-width: 991px) {
-// 	.gallery-item {
-// 		flex: 33.3%;
-// 	}
-// }
-// @media (max-width: 768px) {
-// 	.gallery-item {
-// 		flex: 50%;
-// 	}
-// }
-// @media (max-width: 530px) {
-// 	.gallery-item {
-// 		flex: 100%;
-// 	}
-// }
-
-// .visual-hidden {
-// 	position: absolute;
-// 	width: 1px;
-// 	height: 1px;
-// 	margin: -1px;
-// 	border: 0;
-// 	padding: 0;
-// 	white-space: nowrap;
-// 	clip-path: inset(100%);
-// 	clip: rect(0 0 0 0);
-// 	overflow: hidden;
-// }
